@@ -1,0 +1,19 @@
+# Nmap 7.93 scan initiated Fri Dec 22 11:54:47 2023 as: nmap -p- --open -sS --min-rate 5000 -Pn -o allPorts 10.129.1.12
+Nmap scan report for 10.129.1.12
+Host is up (0.11s latency).
+Not shown: 65182 closed tcp ports (reset), 342 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+5985/tcp  open  wsman
+47001/tcp open  winrm
+49664/tcp open  unknown
+49665/tcp open  unknown
+49666/tcp open  unknown
+49667/tcp open  unknown
+49668/tcp open  unknown
+49669/tcp open  unknown
+
+# Nmap done at Fri Dec 22 11:55:04 2023 -- 1 IP address (1 host up) scanned in 17.81 seconds

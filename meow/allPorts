@@ -1,0 +1,8 @@
+# Nmap 7.93 scan initiated Fri Dec 22 11:20:35 2023 as: nmap -p- --open -sS --min-rate 5000 -Pn -o allPorts 10.129.255.37
+Nmap scan report for 10.129.255.37
+Host is up (0.11s latency).
+Not shown: 65534 closed tcp ports (reset)
+PORT   STATE SERVICE
+23/tcp open  telnet
+
+# Nmap done at Fri Dec 22 11:20:50 2023 -- 1 IP address (1 host up) scanned in 14.63 seconds

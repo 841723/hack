@@ -1,0 +1,18 @@
+# Nmap 7.93 scan initiated Tue Jan 28 08:04:56 2025 as: nmap -sU -p 161 --script=snmp* --min-rate 500 -o contents/udpPorts 10.10.11.48
+Nmap scan report for 10.10.11.48
+Host is up (0.12s latency).
+
+PORT    STATE SERVICE
+161/udp open  snmp
+| snmp-info: 
+|   enterprise: net-snmp
+|   engineIDFormat: unknown
+|   engineIDData: c7ad5c4856d1cf6600000000
+|   snmpEngineBoots: 31
+|_  snmpEngineTime: 2h41m38s
+| snmp-sysdescr: Linux underpass 5.15.0-126-generic #136-Ubuntu SMP Wed Nov 6 10:38:22 UTC 2024 x86_64
+|_  System uptime: 2h41m41.47s (970147 timeticks)
+| snmp-brute: 
+|_  public - Valid credentials
+
+# Nmap done at Tue Jan 28 08:05:17 2025 -- 1 IP address (1 host up) scanned in 20.41 seconds

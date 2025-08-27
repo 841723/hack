@@ -1,0 +1,23 @@
+# Nmap 7.93 scan initiated Mon Jan 27 10:03:52 2025 as: nmap -p- --open -sS --min-rate 5000 -n -Pn -o allPorts 10.10.11.35
+Nmap scan report for 10.10.11.35
+Host is up (0.17s latency).
+Scanned at 2025-01-27 10:03:52 EST for 40s
+Not shown: 65522 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT      STATE SERVICE
+53/tcp    open  domain
+88/tcp    open  kerberos-sec
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+389/tcp   open  ldap
+445/tcp   open  microsoft-ds
+464/tcp   open  kpasswd5
+593/tcp   open  http-rpc-epmap
+636/tcp   open  ldapssl
+3268/tcp  open  globalcatLDAP
+3269/tcp  open  globalcatLDAPssl
+5985/tcp  open  wsman
+53521/tcp open  unknown
+
+Read from /usr/bin/../share/nmap: nmap-services.
+# Nmap done at Mon Jan 27 10:04:32 2025 -- 1 IP address (1 host up) scanned in 40.43 seconds

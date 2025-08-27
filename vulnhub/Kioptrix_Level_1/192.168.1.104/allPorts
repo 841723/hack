@@ -1,0 +1,14 @@
+# Nmap 7.93 scan initiated Sat Jan 28 06:20:49 2023 as: nmap -p- --open -sS --min-rate 5000 -Pn -n -o allPorts 192.168.1.104
+Nmap scan report for 192.168.1.104
+Host is up (0.00010s latency).
+Not shown: 65529 closed tcp ports (reset)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+111/tcp  open  rpcbind
+139/tcp  open  netbios-ssn
+443/tcp  open  https
+1024/tcp open  kdm
+MAC Address: 08:00:27:D5:72:F6 (Oracle VirtualBox virtual NIC)
+
+# Nmap done at Sat Jan 28 06:20:50 2023 -- 1 IP address (1 host up) scanned in 1.88 seconds

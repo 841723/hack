@@ -1,0 +1,13 @@
+Interface: eth0, type: EN10MB, MAC: 08:00:27:b1:9d:67, IPv4: 192.168.1.25
+Starting arp-scan 1.9.8 with 256 hosts (https://github.com/royhills/arp-scan)
+192.168.1.1	44:fe:3b:b0:f2:ae	Arcadyan Corporation
+192.168.1.2	4c:09:d4:74:61:fc	Arcadyan Technology Corporation
+192.168.1.35	00:d8:61:c5:d5:ab	Micro-Star INTL CO., LTD.
+192.168.1.50	08:8f:c3:05:cf:7c	(Unknown)
+192.168.1.104	08:00:27:d5:72:f6	PCS Systemtechnik GmbH
+192.168.1.134	50:65:f3:00:f2:dc	Hewlett Packard
+192.168.1.116	dc:03:98:12:e8:ac	LG Innotek
+192.168.1.150	f0:85:c1:d5:bf:a3	SHENZHEN RF-LINK TECHNOLOGY CO.,LTD.
+
+8 packets received by filter, 0 packets dropped by kernel
+Ending arp-scan 1.9.8: 256 hosts scanned in 1.925 seconds (132.99 hosts/sec). 8 responded

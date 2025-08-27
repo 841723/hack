@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="Vulnhub" unique_id="9" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1671819245" ts_lastsave="1671819259">
+    <node name="Kioptrix 1" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1671816316" ts_lastsave="1671819287">
+      <node name="arp-scan" unique_id="2" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1671816324" ts_lastsave="1671816331">
+        <rich_text>arp-scan -I eth0 --localnet               
+Interface: eth0, type: EN10MB, MAC: 08:00:27:b1:9d:67, IPv4: 192.168.1.25
+Starting arp-scan 1.9.8 with 256 hosts (</rich_text>
+        <rich_text link="webs https://github.com/royhills/arp-scan">https://github.com/royhills/arp-scan</rich_text>
+        <rich_text>)
+192.168.1.1     44:fe:3b:b0:f2:ae       Arcadyan Corporation
+192.168.1.2     4c:09:d4:74:61:fc       Arcadyan Technology Corporation
+192.168.1.35    00:d8:61:c5:d5:ab       Micro-Star INTL CO., LTD.
+192.168.1.50    08:8f:c3:05:cf:7c       (Unknown)
+192.168.1.104   08:00:27:d5:72:f6       PCS Systemtechnik GmbH
+192.168.1.134   50:65:f3:00:f2:dc       Hewlett Packard
+192.168.1.116   dc:03:98:12:e8:ac       LG Innotek
+192.168.1.150   f0:85:c1:d5:bf:a3       SHENZHEN RF-LINK TECHNOLOGY CO.,LTD.
+
+8 packets received by filter, 0 packets dropped by kernel
+Ending arp-scan 1.9.8: 256 hosts scanned in 1.933 seconds (132.44 hosts/sec). 8 responded
+</rich_text>
+      </node>
+      <node name="nmap -p-" unique_id="5" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1671817062" ts_lastsave="1671817075">
+        <rich_text>nmap -p- --open -sS --min-rate 5000 -vvv -n -Pn 192.168.1.104
+Host discovery disabled (-Pn). All addresses will be marked 'up' and scan times may be slower.
+Starting Nmap 7.93 ( </rich_text>
+        <rich_text link="webs https://nmap.org">https://nmap.org</rich_text>
+        <rich_text> ) at 2022-12-23 12:32 EST
+Initiating ARP Ping Scan at 12:32
+Scanning 192.168.1.104 [1 port]
+Completed ARP Ping Scan at 12:32, 0.04s elapsed (1 total hosts)
+Initiating SYN Stealth Scan at 12:32
+Scanning 192.168.1.104 [65535 ports]
+Discovered open port 443/tcp on 192.168.1.104
+Discovered open port 139/tcp on 192.168.1.104
+Discovered open port 111/tcp on 192.168.1.104
+Discovered open port 80/tcp on 192.168.1.104
+Discovered open port 22/tcp on 192.168.1.104
+Discovered open port 1024/tcp on 192.168.1.104
+Completed SYN Stealth Scan at 12:32, 1.65s elapsed (65535 total ports)
+Nmap scan report for 192.168.1.104
+Host is up, received arp-response (0.000067s latency).
+Scanned at 2022-12-23 12:32:13 EST for 2s
+Not shown: 65529 closed tcp ports (reset)
+PORT     STATE SERVICE     REASON
+22/tcp   open  ssh         syn-ack ttl 64
+80/tcp   open  http        syn-ack ttl 64
+111/tcp  open  rpcbind     syn-ack ttl 64
+139/tcp  open  netbios-ssn syn-ack ttl 64
+443/tcp  open  https       syn-ack ttl 64
+1024/tcp open  kdm         syn-ack ttl 64
+MAC Address: 08:00:27:D5:72:F6 (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 1.80 seconds
+           Raw packets sent: 65536 (2.884MB) | Rcvd: 65536 (2.621MB)
+</rich_text>
+      </node>
+      <node name="nmap -sCV" unique_id="6" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1671817097" ts_lastsave="1671817248">
+        <rich_text>nmap -p22,80,111,139,443,1024 -sVC 192.168.1.104                          
+Starting Nmap 7.93 ( </rich_text>
+        <rich_text link="webs https://nmap.org">https://nmap.org</rich_text>
+        <rich_text> ) at 2022-12-23 12:36 EST
+Nmap scan report for 192.168.1.104
+Host is up (0.00059s latency).
+
+PORT     STATE SERVICE     VERSION
+22/tcp   open  ssh         OpenSSH 2.9p2 (protocol 1.99)
+|_sshv1: Server supports SSHv1
+| ssh-hostkey: 
+|   1024 b8746cdbfd8be666e92a2bdf5e6f6486 (RSA1)
+|   1024 8f8e5b81ed21abc180e157a33c85c471 (DSA)
+|_  1024 ed4ea94a0614ff1514ceda3a80dbe281 (RSA)
+80/tcp   open  http        Apache httpd 1.3.20 ((Unix)  (Red-Hat/Linux) mod_ssl/2.8.4 OpenSSL/0.9.6b)
+|_http-server-header: Apache/1.3.20 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.4 OpenSSL/0.9.6b
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-title: Test Page for the Apache Web Server on Red Hat Linux
+111/tcp  open  rpcbind     2 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2            111/tcp   rpcbind
+|   100000  2            111/udp   rpcbind
+|   100024  1           1024/tcp   status
+|_  100024  1           1024/udp   status
+139/tcp  open  netbios-ssn Samba smbd (workgroup: w8MYGROUP)
+443/tcp  open  ssl/https   Apache/1.3.20 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.4 OpenSSL/0.9.6b
+|_ssl-date: 2022-12-22T20:17:56+00:00; -21h18m49s from scanner time.
+| sslv2: 
+|   SSLv2 supported
+|   ciphers: 
+|     SSL2_RC2_128_CBC_WITH_MD5
+|     SSL2_DES_64_CBC_WITH_MD5
+|     SSL2_RC4_128_EXPORT40_WITH_MD5
+|     SSL2_RC4_128_WITH_MD5
+|     SSL2_RC2_128_CBC_EXPORT40_WITH_MD5
+|     SSL2_RC4_64_WITH_MD5
+|_    SSL2_DES_192_EDE3_CBC_WITH_MD5
+|_http-server-header: Apache/1.3.20 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.4 OpenSSL/0.9.6b
+| ssl-cert: Subject: commonName=localhost.localdomain/organizationName=SomeOrganization/stateOrProvinceName=SomeState/countryName=--
+| Not valid before: 2009-09-26T09:32:06
+|_Not valid after:  2010-09-26T09:32:06
+|_http-title: 400 Bad Request
+1024/tcp open  status      1 (RPC #100024)
+MAC Address: 08:00:27:D5:72:F6 (Oracle VirtualBox virtual NIC)
+
+Host script results:
+|_clock-skew: -21h18m49s
+|_smb2-time: Protocol negotiation failed (SMB2)
+|_nbstat: NetBIOS name: KIOPTRIX, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: 000000000000 (Xerox)
+
+Service detection performed. Please report any incorrect results at </rich_text>
+        <rich_text link="webs https://nmap.org/submit/">https://nmap.org/submit/</rich_text>
+        <rich_text> .
+Nmap done: 1 IP address (1 host up) scanned in 23.01 seconds</rich_text>
+      </node>
+      <node name="samba" unique_id="7" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1671817307" ts_lastsave="1671817308">
+        <rich_text>version: 		Samba 2.2.1a</rich_text>
+      </node>
+      <node name="metaexploit" unique_id="8" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1671818136" ts_lastsave="1671818174">
+        <rich_text>search smb_version
+use  0
+show options
+...
+run
+→ Samba 2.2.1a
+
+buscamos “Samba 2.2.1a exploit”
+search trans2open
+use 1
+show options
+...
+run
+→ ya tenemos acceso a root
+
+passwd
+
+</rich_text>
+      </node>
+    </node>
+    <node name="Kioptrix 1.1" unique_id="10" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1671819287" ts_lastsave="1671819306">
+      <node name="arp-scan" unique_id="11" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1671819306" ts_lastsave="1671819340">
+        <rich_text>arp-scan -I eth0 --localnet
+Interface: eth0, type: EN10MB, MAC: 08:00:27:b1:9d:67, IPv4: 192.168.1.25
+Starting arp-scan 1.9.8 with 256 hosts (</rich_text>
+        <rich_text link="webs https://github.com/royhills/arp-scan">https://github.com/royhills/arp-scan</rich_text>
+        <rich_text>)
+192.168.1.1     44:fe:3b:b0:f2:ae       Arcadyan Corporation
+192.168.1.2     4c:09:d4:74:61:fc       Arcadyan Technology Corporation
+192.168.1.35    00:d8:61:c5:d5:ab       Micro-Star INTL CO., LTD.
+192.168.1.49    08:00:27:5e:9f:dc       PCS Systemtechnik GmbH
+192.168.1.50    08:8f:c3:05:cf:7c       (Unknown)
+192.168.1.116   dc:03:98:12:e8:ac       LG Innotek
+192.168.1.134   50:65:f3:00:f2:dc       Hewlett Packard
+192.168.1.150   f0:85:c1:d5:bf:a3       SHENZHEN RF-LINK TECHNOLOGY CO.,LTD.
+192.168.1.91    04:e5:98:49:f0:e0       Xiaomi Communications Co Ltd
+
+9 packets received by filter, 0 packets dropped by kernel
+Ending arp-scan 1.9.8: 256 hosts scanned in 1.912 seconds (133.89 hosts/sec). 9 responded
+</rich_text>
+      </node>
+    </node>
+  </node>
+</cherrytree>

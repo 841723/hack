@@ -1,0 +1,92 @@
+# Nmap 7.93 scan initiated Mon Jan 27 11:25:51 2025 as: nmap -p 22,5000 -sCV -o targeted 10.10.11.38
+Nmap scan report for 10.10.11.38
+Host is up (0.13s latency).
+
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.11 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 b6fc20ae9d1d451d0bced9d020f26fdc (RSA)
+|   256 f1ae1c3e1dea55446c2ff2568d623c2b (ECDSA)
+|_  256 94421b78f25187073e9726c9a25c0a26 (ED25519)
+5000/tcp open  upnp?
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.1 200 OK
+|     Server: Werkzeug/3.0.3 Python/3.9.5
+|     Date: Mon, 27 Jan 2025 16:26:03 GMT
+|     Content-Type: text/html; charset=utf-8
+|     Content-Length: 719
+|     Vary: Cookie
+|     Connection: close
+|     <!DOCTYPE html>
+|     <html lang="en">
+|     <head>
+|     <meta charset="UTF-8">
+|     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+|     <title>Chemistry - Home</title>
+|     <link rel="stylesheet" href="/static/styles.css">
+|     </head>
+|     <body>
+|     <div class="container">
+|     class="title">Chemistry CIF Analyzer</h1>
+|     <p>Welcome to the Chemistry CIF Analyzer. This tool allows you to upload a CIF (Crystallographic Information File) and analyze the structural data contained within.</p>
+|     <div class="buttons">
+|     <center><a href="/login" class="btn">Login</a>
+|     href="/register" class="btn">Register</a></center>
+|     </div>
+|     </div>
+|     </body>
+|   RTSPRequest: 
+|     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+|     "http://www.w3.org/TR/html4/strict.dtd">
+|     <html>
+|     <head>
+|     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+|     <title>Error response</title>
+|     </head>
+|     <body>
+|     <h1>Error response</h1>
+|     <p>Error code: 400</p>
+|     <p>Message: Bad request version ('RTSP/1.0').</p>
+|     <p>Error code explanation: HTTPStatus.BAD_REQUEST - Bad request syntax or unsupported method.</p>
+|     </body>
+|_    </html>
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port5000-TCP:V=7.93%I=7%D=1/27%Time=6797B397%P=x86_64-pc-linux-gnu%r(Ge
+SF:tRequest,38A,"HTTP/1\.1\x20200\x20OK\r\nServer:\x20Werkzeug/3\.0\.3\x20
+SF:Python/3\.9\.5\r\nDate:\x20Mon,\x2027\x20Jan\x202025\x2016:26:03\x20GMT
+SF:\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nContent-Length:\x20
+SF:719\r\nVary:\x20Cookie\r\nConnection:\x20close\r\n\r\n<!DOCTYPE\x20html
+SF:>\n<html\x20lang=\"en\">\n<head>\n\x20\x20\x20\x20<meta\x20charset=\"UT
+SF:F-8\">\n\x20\x20\x20\x20<meta\x20name=\"viewport\"\x20content=\"width=d
+SF:evice-width,\x20initial-scale=1\.0\">\n\x20\x20\x20\x20<title>Chemistry
+SF:\x20-\x20Home</title>\n\x20\x20\x20\x20<link\x20rel=\"stylesheet\"\x20h
+SF:ref=\"/static/styles\.css\">\n</head>\n<body>\n\x20\x20\x20\x20\n\x20\x
+SF:20\x20\x20\x20\x20\n\x20\x20\x20\x20\n\x20\x20\x20\x20<div\x20class=\"c
+SF:ontainer\">\n\x20\x20\x20\x20\x20\x20\x20\x20<h1\x20class=\"title\">Che
+SF:mistry\x20CIF\x20Analyzer</h1>\n\x20\x20\x20\x20\x20\x20\x20\x20<p>Welc
+SF:ome\x20to\x20the\x20Chemistry\x20CIF\x20Analyzer\.\x20This\x20tool\x20a
+SF:llows\x20you\x20to\x20upload\x20a\x20CIF\x20\(Crystallographic\x20Infor
+SF:mation\x20File\)\x20and\x20analyze\x20the\x20structural\x20data\x20cont
+SF:ained\x20within\.</p>\n\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\"
+SF:buttons\">\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<center><a\
+SF:x20href=\"/login\"\x20class=\"btn\">Login</a>\n\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20\x20<a\x20href=\"/register\"\x20class=\"btn\">Regis
+SF:ter</a></center>\n\x20\x20\x20\x20\x20\x20\x20\x20</div>\n\x20\x20\x20\
+SF:x20</div>\n</body>\n<")%r(RTSPRequest,1F4,"<!DOCTYPE\x20HTML\x20PUBLIC\
+SF:x20\"-//W3C//DTD\x20HTML\x204\.01//EN\"\n\x20\x20\x20\x20\x20\x20\x20\x
+SF:20\"http://www\.w3\.org/TR/html4/strict\.dtd\">\n<html>\n\x20\x20\x20\x
+SF:20<head>\n\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20http-equiv=\"Content
+SF:-Type\"\x20content=\"text/html;charset=utf-8\">\n\x20\x20\x20\x20\x20\x
+SF:20\x20\x20<title>Error\x20response</title>\n\x20\x20\x20\x20</head>\n\x
+SF:20\x20\x20\x20<body>\n\x20\x20\x20\x20\x20\x20\x20\x20<h1>Error\x20resp
+SF:onse</h1>\n\x20\x20\x20\x20\x20\x20\x20\x20<p>Error\x20code:\x20400</p>
+SF:\n\x20\x20\x20\x20\x20\x20\x20\x20<p>Message:\x20Bad\x20request\x20vers
+SF:ion\x20\('RTSP/1\.0'\)\.</p>\n\x20\x20\x20\x20\x20\x20\x20\x20<p>Error\
+SF:x20code\x20explanation:\x20HTTPStatus\.BAD_REQUEST\x20-\x20Bad\x20reque
+SF:st\x20syntax\x20or\x20unsupported\x20method\.</p>\n\x20\x20\x20\x20</bo
+SF:dy>\n</html>\n");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jan 27 11:27:39 2025 -- 1 IP address (1 host up) scanned in 107.95 seconds
