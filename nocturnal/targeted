@@ -1,0 +1,21 @@
+# Nmap 7.93 scan initiated Wed Jul  2 10:24:01 2025 as: nmap -p22,80 -sCV -o targeted 10.10.11.64
+Nmap scan report for nocturnal.htb (10.10.11.64)
+Host is up (0.11s latency).
+
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.12 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 202688700851eede3aa6204187962517 (RSA)
+|   256 4f800533a6d42264e9ed14e312bc96f1 (ECDSA)
+|_  256 d9881f68438ed42a52fcf066d4b9ee6b (ED25519)
+80/tcp open  http    nginx 1.18.0 (Ubuntu)
+|_http-server-header: nginx/1.18.0 (Ubuntu)
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+|_http-title: Welcome to Nocturnal
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Jul  2 10:24:11 2025 -- 1 IP address (1 host up) scanned in 10.59 seconds

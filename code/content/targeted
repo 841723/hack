@@ -1,0 +1,16 @@
+# Nmap 7.93 scan initiated Mon Jun 30 12:30:51 2025 as: nmap -p 22,5000 -sCV -o targeted 10.10.11.62
+Nmap scan report for 10.10.11.62
+Host is up (0.22s latency).
+
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.12 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 b5b97cc4503295bcc26517df51a27abd (RSA)
+|   256 94b525549b68afbe40e11da86b850d01 (ECDSA)
+|_  256 128cdc97ad8600b488e229cf69b56596 (ED25519)
+5000/tcp open  http    Gunicorn 20.0.4
+|_http-title: Python Code Editor
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jun 30 12:31:38 2025 -- 1 IP address (1 host up) scanned in 46.54 seconds

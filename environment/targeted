@@ -1,0 +1,9 @@
+# Nmap 7.95 scan initiated Tue Aug 12 11:10:28 2025 as: /usr/lib/nmap/nmap -p 8000 -sCV -o targeted environment.htb
+Nmap scan report for environment.htb (10.10.11.67)
+Host is up (0.091s latency).
+
+PORT     STATE SERVICE   VERSION
+8000/tcp open  http-alt?
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Aug 12 11:12:12 2025 -- 1 IP address (1 host up) scanned in 103.82 seconds

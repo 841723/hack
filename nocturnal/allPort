@@ -1,0 +1,22 @@
+# Nmap 7.93 scan initiated Wed Jul  2 10:02:30 2025 as: nmap -p- --open -sS --min-rate 5000 -n -Pn -vvv -oN allPort 10.10.11.64
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+Nmap scan report for 10.10.11.64
+Host is up, received user-set (0.24s latency).
+Scanned at 2025-07-02 10:02:30 EDT for 25s
+Not shown: 37836 closed tcp ports (reset), 27697 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack ttl 63
+80/tcp open  http    syn-ack ttl 63
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Wed Jul  2 10:02:55 2025 -- 1 IP address (1 host up) scanned in 25.39 seconds

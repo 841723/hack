@@ -1,0 +1,30 @@
+{"level":"info","ts":1740976096.4619145,"msg":"backrest version 1.7.2@b885f1ec9e43e4bfe8f4f6f02bda83f5e7d88574, using log directory: /root/.local/share/backrest/processlogs"}
+{"level":"info","ts":1740976096.463109,"msg":"downloading restic 0.17.3 to /root/.local/share/backrest/restic..."}
+{"level":"info","ts":1740976105.1248367,"msg":"decompressing bz2 archive (size=8944565)..."}
+{"level":"info","ts":1740976117.5373986,"msg":"installed restic 0.17.3"}
+{"level":"info","ts":1740976117.5374737,"msg":"restic binary /root/.local/share/backrest/restic in data dir will be used as no system install matching required version 0.17.3 is found"}
+{"level":"info","ts":1740976117.5538538,"msg":"applying oplog sqlite schema migration from storage schema 0 to 4"}
+{"level":"info","ts":1740976117.5608509,"msg":"oplog applying data migration","migration_no":0}
+{"level":"info","ts":1740976117.566115,"msg":"oplog applying data migration","migration_no":1}
+{"level":"info","ts":1740976117.5694942,"msg":"oplog applying data migration","migration_no":2}
+{"level":"info","ts":1740976117.57414,"msg":"oplog applying data migration","migration_no":3}
+{"level":"info","ts":1740976117.59859,"msg":"scrubbing operation log for incomplete operations"}
+{"level":"info","ts":1740976117.5993347,"msg":"scrubbed operation log for incomplete operations","duration":0.00074592,"incomplete_ops":0,"incomplete_repos":0,"deleted_ops":0}
+{"level":"info","ts":1740976117.5999582,"msg":"scheduling default tasks, waiting for task queue reset."}
+{"level":"info","ts":1740976117.6003568,"msg":"reset task queue, scheduling new task set","timezone":"Local"}
+{"level":"info","ts":1740976117.6003754,"msg":"scheduled task","task":"collect garbage","runAt":"2025-03-03T04:28:38Z"}
+{"level":"info","ts":1740976117.6003838,"msg":"orchestrator created"}
+{"level":"info","ts":1740976117.6004014,"msg":"generating new auth secret"}
+{"level":"info","ts":1740976117.6009996,"msg":"starting orchestrator loop"}
+{"level":"debug","ts":1740976117.6011677,"msg":"syncmanager no known host peers declared, sync client exiting early"}
+{"level":"info","ts":1740976117.6013768,"msg":"starting web server 127.0.0.1:9898"}
+{"level":"info","ts":1740976118.6007059,"msg":"running task","task":"collect garbage","runAt":"2025-03-03T04:28:38Z"}
+{"level":"info","ts":1740976118.6120732,"msg":"collecting garbage operations","operations_removed":0,"removed_by_age":0,"removed_by_limit":0,"removed_by_snapshot_forgotten":0,"removed_by_type":{}}
+{"level":"info","ts":1740976118.612371,"msg":"collecting garbage logs","logs_removed":0}
+{"level":"info","ts":1740976118.6124017,"logger":"collect garbage","msg":"task finished","duration":0.004529811}
+{"level":"info","ts":1740976118.6124322,"msg":"scheduled task","task":"collect garbage","runAt":"2025-03-04T04:28:38Z"}
+{"level":"info","ts":1740976123.0847585,"msg":"shutting down orchestrator loop, context cancelled."}
+{"level":"warn","ts":1740976123.085042,"msg":"attempting graceful shutdown, to force termination press Ctrl+C again"}
+{"level":"info","ts":1740976123.0851274,"msg":"HTTP gateway shutdown"}
+{"level":"info","ts":1741126167.7124512,"msg":"backrest version 1.7.2@b885f1ec9e43e4bfe8f4f6f02bda83f5e7d88574, using log directory: /root/.local/share/backrest/processlogs"}
+{"level":"info","ts":1741126167.71369,"msg":"downloading restic 0.17.3 to /root/.local/share/backrest/restic..."}

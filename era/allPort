@@ -1,0 +1,12 @@
+# Nmap 7.93 scan initiated Tue Jul 29 17:22:43 2025 as: nmap -p- --open -sS --min-rate 5000 -n -Pn -vvv -oN allPort 10.10.11.79
+Nmap scan report for 10.10.11.79
+Host is up, received user-set (0.50s latency).
+Scanned at 2025-07-29 17:22:44 EDT for 24s
+Not shown: 37717 filtered tcp ports (no-response), 27816 closed tcp ports (reset)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT   STATE SERVICE REASON
+21/tcp open  ftp     syn-ack ttl 63
+80/tcp open  http    syn-ack ttl 63
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Tue Jul 29 17:23:08 2025 -- 1 IP address (1 host up) scanned in 24.27 seconds

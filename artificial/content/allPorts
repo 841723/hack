@@ -1,0 +1,9 @@
+# Nmap 7.93 scan initiated Mon Jun 30 10:57:32 2025 as: nmap -p- -sS --min-rate 5000 -n -Pn -vvv -oN content/allPorts 10.10.11.47
+Nmap scan report for 10.10.11.47
+Host is up, received user-set (2.6s latency).
+Scanned at 2025-06-30 10:57:32 EDT for 39s
+All 65535 scanned ports on 10.10.11.47 are in ignored states.
+Not shown: 65501 filtered tcp ports (no-response), 34 filtered tcp ports (host-unreach)
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Mon Jun 30 10:58:11 2025 -- 1 IP address (1 host up) scanned in 39.75 seconds
